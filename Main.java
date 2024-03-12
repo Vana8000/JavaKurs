@@ -2,13 +2,13 @@ public class Main {
     public static void main(String[] args) {
         int a, b, c;
         java.util.Scanner s = new java.util.Scanner(System.in);
-        System.out.print("Введите a: ");
+        System.out.print("Р’РІРµРґРёС‚Рµ a: ");
         a = s.nextInt();
-        System.out.print("Введите b: ");
+        System.out.print("Р’РІРµРґРёС‚Рµ b: ");
         b = s.nextInt();
-        System.out.print("Введите c: ");
+        System.out.print("Р’РІРµРґРёС‚Рµ c: ");
         c = s.nextInt();
-        System.out.println("Вы ввели числа: " + a + ", " + b + ", " + c);
+        System.out.println("Р’С‹ РІРІРµР»Рё С‡РёСЃР»Р°: " + a + ", " + b + ", " + c);
         boolean found = false;
 
         if (a % 5 == 0) {
@@ -25,38 +25,38 @@ public class Main {
         }
 
         if (!found) {
-            System.out.println("нет значений, кратных 5 ");
+            System.out.println("РЅРµС‚ Р·РЅР°С‡РµРЅРёР№, РєСЂР°С‚РЅС‹С… 5 ");
         }
 
         int result = a / b;
 
-        System.out.println("Результат целочисленного деления a на b: " + result);
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ С†РµР»РѕС‡РёСЃР»РµРЅРЅРѕРіРѕ РґРµР»РµРЅРёСЏ a РЅР° b: " + result);
 
         double a1 = a;
         double b1 = b;
         double result1 = a1 / b1;
-        System.out.println("Результат деления a на b: " + result1);
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РґРµР»РµРЅРёСЏ a РЅР° b: " + result1);
 
         double result2 = Math.ceil((double) a / b);
 
-        System.out.println("Результат с округлением до ближайшего целого значения в большую сторону: " + result2);
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СЃ РѕРєСЂСѓРіР»РµРЅРёРµРј РґРѕ Р±Р»РёР¶Р°Р№С€РµРіРѕ С†РµР»РѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ РІ Р±РѕР»СЊС€СѓСЋ СЃС‚РѕСЂРѕРЅСѓ: " + result2);
 
         double result3 = Math.floor((double) a / b);
-        System.out.println("Результат с округлением до ближайшего целого значения в меньшую сторону: " + (int) result3);
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СЃ РѕРєСЂСѓРіР»РµРЅРёРµРј РґРѕ Р±Р»РёР¶Р°Р№С€РµРіРѕ С†РµР»РѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ РІ РјРµРЅСЊС€СѓСЋ СЃС‚РѕСЂРѕРЅСѓ: " + (int) result3);
 
         double result4 = Math.round((double) a / b);
-        System.out.println("Результат с округлением до ближайшего целого значения с математическим округлением: " + (int) result4);
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СЃ РѕРєСЂСѓРіР»РµРЅРёРµРј РґРѕ Р±Р»РёР¶Р°Р№С€РµРіРѕ С†РµР»РѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ СЃ РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёРј РѕРєСЂСѓРіР»РµРЅРёРµРј: " + (int) result4);
 
         int remainder = b % c;
 
-        System.out.println("Остаток от деления b на c: " + remainder);
+        System.out.println("РћСЃС‚Р°С‚РѕРє РѕС‚ РґРµР»РµРЅРёСЏ b РЅР° c: " + remainder);
 
         int minValue = Math.min(a, b);
 
-        System.out.println("Наименьшее значение из a и b: " + minValue);
+        System.out.println("РќР°РёРјРµРЅСЊС€РµРµ Р·РЅР°С‡РµРЅРёРµ РёР· a Рё b: " + minValue);
 
         int max = Math.max(b, c);
 
-        System.out.println("Наибольшее значение из b и c: " + max);
+        System.out.println("РќР°РёР±РѕР»СЊС€РµРµ Р·РЅР°С‡РµРЅРёРµ РёР· b Рё c: " + max);
     }
 }
